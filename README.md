@@ -34,6 +34,6 @@ npm run build
 
 ## Resources
 
-[Apollo Getting Started](https://www.apollographql.com/docs/apollo-server/getting-started/)
-[GraphQL Docs](https://graphql.org/learn/)
-[GraphQL Playground](https://www.apollographql.com/docs/apollo-server/testing/graphql-playground/)
+- [Apollo Getting Started](https://www.apollographql.com/docs/apollo-server/getting-started/)
+- [GraphQL Docs](https://graphql.org/learn/)
+- [GraphQL Playground](https://www.apollographql.com/docs/apollo-server/testing/graphql-playground/)
