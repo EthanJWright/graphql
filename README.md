@@ -32,6 +32,30 @@ npm run build
 
 ```
 
+## Why
+
+This repo bootstraps
+
+- Defining your graph in a `.gql` file instead of a string (hello linting)
+- Auto generating TS types for your graph resolvers
+- Setting up client requests that have gql formatting
+
+## Notes
+
+### Pretty Neovim
+
+If you use neovim, make sure to add a graphqlrc
+location: `~/.graphqlrc`
+content:
+
+```txt
+schema: https://countries.trevorblades.com/
+documents: ./*.graphql
+```
+
+Get a [treesitter plugin](https://github.com/bkegley/tree-sitter-graphql)
+If using lazyvim you can run `:TSInstall graphql`
+
 ## Resources
 
 - [Apollo Getting Started](https://www.apollographql.com/docs/apollo-server/getting-started/)
