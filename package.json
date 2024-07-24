@@ -1,0 +1,36 @@
+{
+  "name": "graphql",
+  "version": "1.0.0",
+  "private": true,
+  "description": "playground for graphql",
+  "scripts": {
+    "start": "npx ts-node ./src/graphql.ts",
+    "clean": "gts clean",
+    "build": "npm run build:codegen",
+    "writeReleaseSchema": "npx ts-node ./src/schema/build/schemaGen.ts",
+    "build:codegen": "graphql-codegen --config ./graphTypeGen.ts && npm run writeReleaseSchema",
+    "lint": "gts lint",
+    "compile": "tsc",
+    "fix": "gts fix",
+    "prepare": "npm run compile",
+    "pretest": "npm run compile",
+    "posttest": "npm run lint"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.10.5",
+    "@graphql-codegen/cli": "5.0.0",
+    "@graphql-codegen/typescript": "4.0.1",
+    "@graphql-codegen/typescript-operations": "4.0.1",
+    "@graphql-codegen/typescript-resolvers": "4.0.6",
+    "@graphql-tools/merge": "9.0.0",
+    "@graphql-tools/schema": "10.0.0",
+    "graphql": "^16.9.0",
+    "graphql-tag": "^2.12.6",
+    "typescript": "^5.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "20.12.7",
+    "gts": "^5.3.1",
+    "typescript": "^5.4.3"
+  }
+}
